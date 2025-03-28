@@ -1,6 +1,6 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 RUN apt-get update -y
-RUN apt-get install wget build-essential unzip git python2 python2-pip-whl python2-setuptools-whl git virtualenv -y
+RUN apt-get install wget build-essential unzip git python2 python2-pip-whl python2-setuptools-whl virtualenv -y
 WORKDIR /opt/
 RUN wget https://github.com/zocteam/zeroonecoin/releases/download/v0.13.0/zeroonecore-0.13.0-x86_64-linux-gnu.tar.gz
 RUN tar zxvf zeroonecore-0.13.0-x86_64-linux-gnu.tar.gz
