@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 RUN apt-get update -y
 RUN apt-get install wget build-essential unzip git python2 python2-pip-whl python2-setuptools-whl virtualenv -y
 WORKDIR /opt/
